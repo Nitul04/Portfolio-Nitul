@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio-About</title>
+  <!-- /bootstrap.min.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+    integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- main-manu -->
+  <section class="main-manu">
+    <nav class="navbar navbar-expand-lg bg-success fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><strong>NITUL</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- navbar-end  -->
+
+
+
+<!-- Page Title Section -->
+<section class="page-title">
+    <div class="container">
+        <h1>About Me</h1>
+        <p>Learn more about my journey, clients, and skills</p>
+    </div>
+</section>
+
+<!-- Personal Biography Section -->
+<section class="biography py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="image/profile.png" class="img-fluid rounded-circle" alt="Your Photo">
+            </div>
+            <div class="col-md-8">
+                <h2>Hi, I'm I A NITUL</h2>
+                <p>
+                    I am a passionate web developer/designer with experience in creating beautiful and functional websites. 
+                    I specialize in front-end development, responsive design, and modern web technologies. 
+                    I love turning ideas into reality through clean, efficient code and creative design.
+                </p>
+                <p>
+                    When I'm not coding, I enjoy learning new technologies, exploring design trends, and connecting with clients to bring their visions to life.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Existing Clients Section -->
+<section class="clients py-5 bg-light">
+    <div class="container text-center">
+        <h2 class="mb-4">Some of My Clients</h2>
+        <div class="d-flex flex-wrap justify-content-center">
+            <img src="https://cdn.pixabay.com/photo/2022/05/20/22/27/ninja-7210338_1280.png" class="client-img" alt="Client 1">
+            <img src="https://cdn.pixabay.com/photo/2017/10/25/16/44/apple-2888499_1280.png" class="client-img" alt="Client 2">
+            <img src="https://cdn.pixabay.com/photo/2015/10/20/21/05/mcdonald-998495_1280.png" class="client-img" alt="Client 3">
+            <img src="https://cdn.pixabay.com/photo/2016/10/18/05/52/android-logo-1749407_1280.png" class="client-img" alt="Client 4">
+            <img src="https://cdn.pixabay.com/photo/2017/01/19/09/11/logo-google-1991840_1280.png" class="client-img" alt="Client 5">
+        </div>
+    </div>
+</section>
+
+<!-- Skill Information Section -->
+<section class="skills py-5 mb-5 shadow">
+    <div class="container">
+        <h2 class="text-center mb-5">My Skills</h2>
+        <div class="row g-4">
+            <div class="col-sm-6 col-lg-3">
+                <h5>HTML / CSS</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-primary" style="width: 90%;">90%</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <h5>JavaScript</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-success" style="width: 85%;">85%</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <h5>Bootstrap 5</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-info" style="width: 95%;">95%</div>
+                </div>
+            </div>
+            <div class="col-sm-6 col-lg-3">
+                <h5>React / Vue</h5>
+                <div class="progress">
+                    <div class="progress-bar bg-warning" style="width: 75%;">75%</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+  <footer class="bg-success text-white py-3 fixed-bottom">
+    <div class="row">
+      <div class="col text-center">
+        <p class="mb-0 small">
+          © 2025 NITUL. All Rights Reserved.
+          <span id="currentDateTime"></span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      // Format: Day Month Date Year HH:MM:SS
+      const formatted = now.toLocaleString(); 
+      document.getElementById('currentDateTime').textContent = formatted;
+    }
+  
+    // Update immediately and then every second
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+  <!-- bundle.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+    integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

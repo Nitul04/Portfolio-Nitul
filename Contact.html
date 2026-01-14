@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio-Contact</title>
+  <!-- /bootstrap.min.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+    integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- main-manu -->
+  <section class="main-manu">
+    <nav class="navbar navbar-expand-lg bg-success fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><strong>NITUL</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!-- navbar-end  -->
+   <!-- Page Title Section -->
+<section class="Contact-title">
+    <div class="container">
+        <h1 class="display-4">Contact Me</h1>
+        <p class="lead">Get in touch for collaborations or inquiries</p>
+    </div>
+</section>
+
+<!-- Direct Contact Information Section -->
+<section class="py-5">
+    <div class="container">
+        <div class="row text-center g-4">
+            <div class="col-md-4">
+                <div class="contact-info">
+                    <i class="bi bi-telephone text-success"></i>
+                    <h5 class="mt-2">Phone</h5>
+                    <p>+8801683039828</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info">
+                    <i class="bi bi-envelope text-success"></i>
+                    <h5 class="mt-2">Email</h5>
+                    <p>weareouridentity@gmail.com</p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="contact-info">
+                    <i class="bi bi-geo-alt text-success"></i>
+                    <h5 class="mt-2">Location</h5>
+                    <p>Dhaka, Bangladesh</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Send a Message</h2>
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <form id="contactForm" class="contact-form" onsubmit="return validateForm()">
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea class="form-control" id="message" rows="5" placeholder="Your message"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-success w-100">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Google Map Section -->
+<section class="py-5 mb-5" id="find-me-here">
+  <div class="container">
+      <h2 class="text-center mb-4">Find Me Here</h2>
+      <div class="map-responsive">
+          <iframe 
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.9139825550527!2d90.39945241536248!3d23.810331894731904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c7dd99b4c2d5%3A0x3d7a4f6c8f26b8d7!2sDhaka%2C%20Bangladesh!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+              allowfullscreen="" 
+              loading="lazy">
+          </iframe>
+      </div>
+  </div>
+</section>
+  <footer class="bg-success text-white py-3 fixed-bottom">
+    <div class="row">
+      <div class="col text-center">
+        <p class="mb-0 small">
+          © 2025 NITUL. All Rights Reserved.
+          <span id="currentDateTime"></span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      // Format: Day Month Date Year HH:MM:SS
+      const formatted = now.toLocaleString(); 
+      document.getElementById('currentDateTime').textContent = formatted;
+    }
+  
+    // Update immediately and then every second
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+  <!-- Bootstrap 5 JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+<!-- JavaScript Validation -->
+<script>
+function validateForm() {
+    let name = document.getElementById('name').value.trim();
+    let email = document.getElementById('email').value.trim();
+    let message = document.getElementById('message').value.trim();
+    let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+
+    if (name === "") {
+        alert("Please enter your name");
+        return false;
+    }
+    if (email === "" || !email.match(emailPattern)) {
+        alert("Please enter a valid email address");
+        return false;
+    }
+    if (message === "") {
+        alert("Please enter your message");
+        return false;
+    }
+
+    alert("Message sent successfully!");
+    return true; // Form submission can go to server if needed
+}
+</script>
+</body>
+
+</html>

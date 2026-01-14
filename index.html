@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio-Home</title>
+  <!-- /bootstrap.min.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/css/bootstrap.min.css"
+    integrity="sha512-2bBQCjcnw658Lho4nlXJcc6WkV/UxpE/sAokbXPxQNGqmNdQrWqtw26Ns9kFF/yG792pKR1Sx8/Y1Lf1XN4GKA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- main-manu -->
+  <section class="main-manu">
+    <nav class="navbar navbar-expand-lg bg-success fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><strong>NITUL</strong></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+          aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+          <ul class="navbar-nav ms-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Service.html">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="Contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+<!-- slider -->
+<!-- a. Introduction to the Individual and different information about Individuals -->
+<section class="Slider">
+  <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+    
+    <div class="carousel-inner">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <img
+          src="image/slider1st.png"
+          class="d-block w-100"
+          style="height: 600px; object-fit: cover;"
+          alt="slider1st">
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="container h-100">
+          <div class="row h-100 align-items-center">
+
+            <!-- Text -->
+            <div class="col-md-6 d-flex justify-content-center">
+              <div class="p-4 text-light rounded"
+                   style="background: rgba(25,135,84,0.9); max-width: 520px;">
+                <p class="fs-5 mb-1">Hi, I'm <strong>NITUL</strong></p>
+                <h2 class="fw-bold">Professional Web Developer</h2>
+                <a href="Contact.html" class="btn btn-success fw-semibold px-4 py-2 hire-btn">
+                  Hire Me
+                </a>
+              </div>
+            </div>
+
+            <!-- Image -->
+            <div class="col-md-6">
+              <img
+                src="image/slider2nd.jpg"
+                class="img-fluid w-100"
+                style="height: 600px; object-fit: cover;"
+                alt="slider2nd">
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Controls -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+
+  </div>
+</section>
+
+<!-- Carrier Mission & Vision -->
+<section class="Mission_vision py-5 shadow-sm p-3 mb-5 bg-body rounded">
+  <div class="container">
+    <!-- <h1 class="text-center text-success">Carrier Mission & Vision</h1> -->
+    <div class="text-center mb-3">
+      <h1 class="badge rounded-pill text-bg-success text-wrap fs-1">🎯Carrier 👁️</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-6 rounded-pill bg-light mt-3 py-3 shadow">
+        <h3 class="text-center text-success">🎯 Mission</h3>
+        <p class="text-center text-success">
+          To deliver impactful, reliable, and professional services that empower clients to reach their full potential. 
+          My work is centered around integrity, creativity, and consistent improvement.
+        </p>
+      </div>
+
+      <div class="col-lg-6 rounded-pill bg-light mt-3 py-3 shadow">
+        <h3 class="text-center text-success">👁️ Vision</h3>
+        <p class="text-center text-success">
+          To grow as a trusted expert in the digital industry, known for innovation, quality service, and long-term client success. 
+          I aim to create meaningful work that inspires confidence and drives results.
+        </p>
+      </div>
+    </div>
+
+    <!-- Button -->
+    <div class="text-center mt-4">
+      <a href="about.html" class="btn btn-success btn-lg rounded-pill shadow">
+      About Me
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Service List -->
+<section class="Service-list pb-5 shadow-sm p-3 mb-5 bg-body rounded">
+  <div class="container">
+    <!-- <h1 class="text-center rounded-pill bg-success text-light py-2 mb-4">🛠️ My Services 🛠️</h1> -->
+     <div class="text-center mb-3">
+      <h1 class="badge rounded-pill text-bg-success text-wrap fs-1">My Services</h1>
+     </div>
+    <div class="row row-cols-1 row-cols-md-2 g-4">
+      <div class="col">
+        <div class="card border border-success">
+          <img src="image/WebDesign&Development.jpg" class="card-img-top" alt="WebDesign&Development.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Web Design & Development</h5>
+            <p class="card-text">Modern, responsive websites tailored to your goals.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border border-success">
+          <img src="image/digital-marketing.jpg" class="card-img-top" alt="digital-marketing.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Digital Marketing</h5>
+            <p class="card-text">Smart strategies to boost conversions and build brand visibility.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border border-success">
+          <img src="image/SEO Optimization & Website Audit.jpg" class="card-img-top" alt="SEO Optimization & Website Audit.jpg">
+          <div class="card-body">
+            <h5 class="card-title">SEO & Website Audit</h5>
+            <p class="card-text">Improve search ranking and site performance.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card border border-success">
+          <img src="image/Front-End Development.jpg" class="card-img-top" alt="Front-End Development.jpg">
+          <div class="card-body">
+            <h5 class="card-title">Front-End Development</h5>
+            <p class="card-text">I am using HTML, CSS, JavaScript, and modern frameworks.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-center mt-4">
+      <a href="Service.html" class="btn btn-success btn-lg rounded-pill px-5">
+        <i class="bi bi-grid-fill me-2"></i> View All Services
+      </a>
+    </div>
+  </div>
+</section>
+<!-- Client Feedback -->
+<section class="Client-Feedback pb-5 mb-5">
+  <div class="container">
+    <div class="text-center mb-3">
+      <h1 class="badge rounded-pill text-bg-success text-wrap fs-1">💬 Client Feedback 💬</h1>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-5">
+      <div class="col shadow p-3 mb-5 bg-body rounded">
+        <div class="card h-100 border border-success">
+          <img src="image/feedback.jpg" alt="feedback.jpg"
+               class="rounded-circle m-3"
+               style="width:150px;height:150px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">⭐ Sarah Mitchell — Business Owner</h5>
+            <p class="card-text">
+              “Working with him was an excellent experience. He transformed my ideas into a clean, professional website that boosted my brand’s online presence.”
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">⭐ ⭐ ⭐ ⭐ ⭐</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col shadow p-3 mb-5 bg-body rounded">
+        <div class="card h-100 border border-success">
+          <img src="image/feedback2.jpg" alt="feedback2.jpg"
+               class="rounded-circle m-3"
+               style="width:150px;height:150px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">⭐ Jason Carter — Digital Marketer</h5>
+            <p class="card-text">
+              “He delivered a fast, responsive, and beautifully designed website. Highly recommended!”
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">⭐ ⭐ ⭐ ⭐</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="col shadow p-3 mb-5 bg-body rounded">
+        <div class="card h-100 border border-success">
+          <img src="image/feedback3.jpg" alt="feedback3.jpg"
+               class="rounded-circle m-3"
+               style="width:150px;height:150px;object-fit:cover;">
+          <div class="card-body">
+            <h5 class="card-title">⭐ Emily Ross — Entrepreneur</h5>
+            <p class="card-text">
+              “The new design is modern, user-friendly, and much faster. I’ll definitely work with him again.”
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">⭐ ⭐ ⭐</small>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🔗 Portfolio Button -->
+    <div class="text-center">
+      <a href="Portfolio.html" class="btn btn-success btn-lg rounded-pill px-5 shadow">
+        View My Portfolio
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Bottom Footer -->
+<section>
+  <footer class="bg-success text-white py-3 fixed-bottom">
+    <div class="row">
+      <div class="col text-center">
+        <p class="mb-0 small">
+          © 2025 NITUL. All Rights Reserved.
+          <span id="currentDateTime"></span>
+        </p>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    function updateDateTime() {
+      const now = new Date();
+      // Format: Day Month Date Year HH:MM:SS
+      const formatted = now.toLocaleString(); 
+      document.getElementById('currentDateTime').textContent = formatted;
+    }
+  
+    // Update immediately and then every second
+    updateDateTime();
+    setInterval(updateDateTime, 1000);
+  </script>
+  
+</section>
+
+  <!-- bundle.min.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+    integrity="sha512-HvOjJrdwNpDbkGJIG2ZNqDlVqMo77qbs4Me4cah0HoDrfhrbA+8SBlZn1KrvAQw7cILLPFJvdwIgphzQmMm+Pw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
